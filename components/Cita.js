@@ -17,15 +17,15 @@ const Cita = ({cita, eliminarPaciente}) => {
         <View style={styles.cita}>
             <View>
                 <Text style={styles.label}>Paciente: </Text>
-                <Text style={styles.texto}>{cita.paciente}</Text>
+                <Text style={styles.texto}>{cita.patient}</Text>
             </View>
             <View>
                 <Text style={styles.label}>Propietario: </Text>
-                <Text style={styles.texto}>{cita.propietario}</Text>
+                <Text style={styles.texto}>{cita.owner}</Text>
             </View>
             <View>
                 <Text style={styles.label}>Síntomas: </Text>
-                <Text style={styles.texto}>{cita.sintomas}</Text>
+                <Text style={styles.texto}>{cita.symptom}</Text>
             </View>
             <View>
                 <TouchableHighlight onPress={() => dialogoEliminar(cita.id)} style={styles.btnEliminar}>
